@@ -10,8 +10,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dlLibrary" />
-            <option value="$PROJECT_DIR$/mylibrary" />
-            <option value="$PROJECT_DIR$/thirdlibrary" />
+            <option value="$PROJECT_DIR$/myLibrary" />
+            <option value="$PROJECT_DIR$/thirdLibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,1 +1,1 @@
-include ':app', ':mylibrary', ':dlLibrary', ':thirdlibrary'
+include ':app', ':myLibrary', ':dlLibrary', ':thirdLibrary'
