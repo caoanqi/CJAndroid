@@ -32,7 +32,7 @@ public class CommentsViewModel extends BaseViewModel {
     @Override
     protected void initData() {
         super.initData();
-        CommentsModel commentsModel = CommentServicesImpl.getCommentsAll();
+        CommentsModel commentsModel = CommentServicesImpl.getCommentsAll(mActivity);
         if (commentsModel != null) {
             commentsBeanList = commentsModel.getComments();
             onBindingData();
@@ -42,7 +42,7 @@ public class CommentsViewModel extends BaseViewModel {
     @Override
     protected void onBindingData() {
         super.onBindingData();
-        commentsAdapter = new CommentsAdapter(commentsBeanList);
+        commentsAdapter = new CommentsAdapter(commentsBeanList,mActivity);
         activityCommentsBinding.rvComments.setAdapter(commentsAdapter);
     }
 }

@@ -1,12 +1,15 @@
 package com.tpwalk.cjdroid.adapters;
 
+import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
 import com.tpwalk.cjdroid.BR;
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.databinding.ListItemCommentsBinding;
@@ -21,9 +24,11 @@ import java.util.List;
 
 public class CommentsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<CommentsModel.CommentsBean> commentsBeans;
+    private Context context;
 
-    public CommentsAdapter(List<CommentsModel.CommentsBean> commentsBeanList) {
+    public CommentsAdapter(List<CommentsModel.CommentsBean> commentsBeanList, Context context) {
         commentsBeans = commentsBeanList;
+        this.context = context;
     }
 
     @Override
@@ -37,6 +42,7 @@ public class CommentsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         CommentsViewHolder commentsViewHolder = (CommentsViewHolder) holder;
         commentsViewHolder.getViewDataBinding().setVariable(BR.commentsModel, commentsBeans.get(position));
+        Picasso.with(context).load(commentsBeans.get(position).getAvatar()).into(commentsViewHolder.getViewDataBinding().ivImage);
         commentsViewHolder.getViewDataBinding().executePendingBindings();
 
     }
@@ -49,22 +55,23 @@ public class CommentsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     class CommentsViewHolder extends RecyclerView.ViewHolder {
 
-        private ViewDataBinding viewDataBinding;
+        private ListItemCommentsBinding viewDataBinding;
 
         public CommentsViewHolder(View itemView) {
             super(itemView);
         }
 
-        public CommentsViewHolder(View itemView, ViewDataBinding viewDataBinding) {
+        public CommentsViewHolder(View itemView, ListItemCommentsBinding viewDataBinding) {
             super(itemView);
             this.viewDataBinding = viewDataBinding;
+
         }
 
-        public ViewDataBinding getViewDataBinding() {
+        public ListItemCommentsBinding getViewDataBinding() {
             return viewDataBinding;
         }
 
-        public void setViewDataBinding(ViewDataBinding viewDataBinding) {
+        public void setViewDataBinding(ListItemCommentsBinding viewDataBinding) {
             this.viewDataBinding = viewDataBinding;
         }
     }

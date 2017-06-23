@@ -6,5 +6,5 @@ package com.tpwalk.mylibrary.net;
  */
 
 public class ApiUrls {
-    public static final String BASE_URL = "http://news-at.zhihu.com/";
+    public static final String BASE_URL = "http://news-at.zhihu.com/api/";
 }
