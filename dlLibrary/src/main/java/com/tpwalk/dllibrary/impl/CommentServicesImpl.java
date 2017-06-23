@@ -19,9 +19,9 @@ import io.reactivex.schedulers.Schedulers;
 
 public class CommentServicesImpl {
 
-    private CommentsModel commentsModel;
+    private static CommentsModel commentsModel;
 
-    public CommentsModel getCommentsAll() {
+    public static synchronized CommentsModel getCommentsAll() {
 
         Observable<Notification<CommentsModel>> commentsOb = RetrofitProvider.getInstance().create(CommentsServices.class)
                 .getCommentsAll()
