@@ -17,8 +17,8 @@ import java.util.List;
 
 public class CommentsViewModel extends BaseViewModel {
 
-    ActivityCommentsBinding activityCommentsBinding;
-    CommentsAdapter commentsAdapter;
+    private ActivityCommentsBinding activityCommentsBinding;
+    private CommentsAdapter commentsAdapter;
     private List<CommentsModel.CommentsBean> commentsBeanList;
 
     public CommentsViewModel(ActivityCommentsBinding activityCommentsBinding, Activity activity) {
