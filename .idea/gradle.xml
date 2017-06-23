@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/dlLibrary" />
             <option value="$PROJECT_DIR$/myLibrary" />
-            <option value="$PROJECT_DIR$/thirdLibrary" />
+            <option value="$PROJECT_DIR$/thirdlibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
