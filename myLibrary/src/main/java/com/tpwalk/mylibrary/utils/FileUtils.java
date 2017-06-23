@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.blankj.utilcode.utils.ConvertUtils.bytes2HexString;
+import static com.tpwalk.mylibrary.utils.ConvertUtils.bytes2HexString;
 
 
 /**
