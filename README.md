@@ -11,9 +11,13 @@
 项目目录结构
 
 app：主要  是应用ui层 （activity，adapters，widget，fragment，common，viewmodel）
+
 dlLibrary：数据应用层（services，impl，model）
+
 myLibrary：自己的项目库（常用的项目工具类和自定义view方便拓展）
+
 thirdLibrary：第三方的类库（引用的第三方库）
+
 具体的项目目录可以看项目，自己可以根据自己的一个情况进行整合。这只是本人根据自身情况设想的一个代码结构模式
 这样的一个分层设计，主要是借鉴网站和后台上开发的一个模式。方便复用和拓展，也方便修改逻辑上也看着更清晰。
 
