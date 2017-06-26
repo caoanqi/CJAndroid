@@ -1,13 +1,13 @@
 # CJAndroid
  
- 标题
+ 标题/n
 一个 快速开发android应用的框架。
 
-简介
+简介/n
 本框架采用了rxjava+retrofit+mvvm的这样一个开发模式，中间还采用了lambda表达式，android的一些新组件和技术的使用。
 计划添加一些常用的第三方库。项目里会集成一些常用的工具类和自定义view控件。不会有太多高深的东西在里面添加，只使用一些常用的技术知识点填充进来，尽量保证项目和代码的简洁，这样也方便关注的朋友可以很快的了解框架和使用。
 
-项目目录结构：
+项目目录结构：/n
 app：主要  是应用ui层 （activity，adapters，widget，fragment，common，viewmodel）
 dlLibrary：数据应用层（services，impl，model）
 myLibrary：自己的项目库（常用的项目工具类和自定义view方便拓展）
