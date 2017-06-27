@@ -6,6 +6,7 @@ import com.tpwalk.cjdroid.adapters.CommentsAdapter;
 import com.tpwalk.cjdroid.base.BaseViewModel;
 import com.tpwalk.cjdroid.databinding.ActivityCommentsBinding;
 import com.tpwalk.dllibrary.impl.CommentServicesImpl;
+import com.tpwalk.dllibrary.impl.InvokeApiCallbackData;
 import com.tpwalk.dllibrary.model.CommentsModel;
 
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
  * Created by Administrator on 2017/6/23.
  */
 
-public class CommentsViewModel extends BaseViewModel {
+public class CommentsViewModel extends BaseViewModel implements InvokeApiCallbackData<CommentsModel>{
 
     private ActivityCommentsBinding activityCommentsBinding;
     private CommentsAdapter commentsAdapter;
@@ -32,11 +33,7 @@ public class CommentsViewModel extends BaseViewModel {
     @Override
     protected void initData() {
         super.initData();
-        CommentsModel commentsModel = CommentServicesImpl.getCommentsAll(mActivity);
-        if (commentsModel != null) {
-            commentsBeanList = commentsModel.getComments();
-            onBindingData();
-        }
+        CommentServicesImpl.getInstance(mActivity,this).getCommentsAll(mActivity);
     }
 
     @Override
@@ -44,5 +41,13 @@ public class CommentsViewModel extends BaseViewModel {
         super.onBindingData();
         commentsAdapter = new CommentsAdapter(commentsBeanList,mActivity);
         activityCommentsBinding.rvComments.setAdapter(commentsAdapter);
+    }
+
+    @Override
+    public void callBackData(CommentsModel commentsModel) {
+        if (commentsModel != null) {
+            commentsBeanList = commentsModel.getComments();
+            onBindingData();
+        }
     }
 }

@@ -3,6 +3,14 @@ package com.tpwalk.mylibrary.net;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.IOException;
+import java.lang.reflect.Field;
+
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -22,6 +30,7 @@ public class RetrofitProvider {
             Gson gson = new GsonBuilder()
                     .registerTypeAdapterFactory(new ApiTypeAdapterFactory("data"))
                     .create();
+
             retrofit = new Retrofit.Builder()
                     .baseUrl(ApiUrls.BASE_URL)
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

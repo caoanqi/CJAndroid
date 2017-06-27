@@ -3,6 +3,8 @@ package com.tpwalk.dllibrary.services;
 import com.tpwalk.dllibrary.model.CommentsModel;
 
 import io.reactivex.Observable;
+import retrofit2.Call;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 /**
@@ -13,6 +15,6 @@ import retrofit2.http.POST;
 
 public interface CommentsServices {
 
-    @POST("4/story/4232852/short-comments")
-    public Observable<CommentsModel> getCommentsAll();
+    @GET("4/story/4232852/short-comments")
+    Call<CommentsModel> getCommentsAll();
 }
