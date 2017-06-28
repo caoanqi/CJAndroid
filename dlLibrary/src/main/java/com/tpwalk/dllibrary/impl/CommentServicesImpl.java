@@ -26,13 +26,10 @@ import rx.Subscriber;
 
 public class CommentServicesImpl {
 
-    private CommentsModel commentsModel;
     private static CommentServicesImpl commentServices;
-    private Context context;
     private InvokeApiCallbackData invokeApiCallbackData;
 
     private CommentServicesImpl(Context context, InvokeApiCallbackData invokeApiCallbackData) {
-        this.context = context;
         this.invokeApiCallbackData = invokeApiCallbackData;
     }
 
@@ -43,7 +40,7 @@ public class CommentServicesImpl {
         return commentServices;
     }
 
-    public CommentsModel getCommentsAll(Context context) {
+    public void getCommentsAll(Context context) {
 
         CommentsServices services = RetrofitProvider.getInstance().create(CommentsServices.class);
         Call<CommentsModel> result = services.getCommentsAll();
@@ -61,7 +58,6 @@ public class CommentServicesImpl {
                 ToastUtils.showLongToast(context, t.getMessage());
             }
         });
-        return commentsModel;
 
     }
 }
