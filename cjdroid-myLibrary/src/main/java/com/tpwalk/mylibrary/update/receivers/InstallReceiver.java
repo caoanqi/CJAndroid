@@ -36,8 +36,7 @@ public class InstallReceiver extends BroadcastReceiver {
     long id = sp.getLong(PrefsConsts.DOWNLOAD_APK_ID_PREFS, -1L);
 
     if (downloadApkId == id) {
-      DownloadManager dManager = (DownloadManager) context
-          .getSystemService(Context.DOWNLOAD_SERVICE);
+      DownloadManager dManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
       Intent install = new Intent(Intent.ACTION_VIEW);
       Uri downloadFileUri = dManager.getUriForDownloadedFile(downloadApkId);
       if (downloadFileUri != null) {
