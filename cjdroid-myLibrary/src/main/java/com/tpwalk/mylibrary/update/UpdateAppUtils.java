@@ -70,10 +70,8 @@ public class UpdateAppUtils {
    * @param storeApk 存储的Apk
    */
   @SuppressWarnings("unused")
-  public static void downloadApk(
-      Context context, UpdateInfo updateInfo,
-      String infoName, String storeApk
-  ) {
+  public static void downloadApk(Context context, UpdateInfo updateInfo, String infoName,
+      String storeApk) {
     if (!isDownloadManagerAvailable()) {
       return;
     }
@@ -111,8 +109,7 @@ public class UpdateAppUtils {
     request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, storeApk);
 
     Context appContext = context.getApplicationContext();
-    DownloadManager manager = (DownloadManager)
-        appContext.getSystemService(Context.DOWNLOAD_SERVICE);
+    DownloadManager manager = (DownloadManager) appContext.getSystemService(Context.DOWNLOAD_SERVICE);
 
     // 存储下载Key
     SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(appContext);
