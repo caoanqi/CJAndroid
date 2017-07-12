@@ -1,5 +1,6 @@
 package com.tpwalk.mylibrary.utils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Address;
@@ -78,6 +79,7 @@ public class LocationUtils {
      * @param listener    位置刷新的回调接口
      * @return {@code true}: 初始化成功<br>{@code false}: 初始化失败
      */
+    @SuppressLint("MissingPermission")
     public static boolean register(Context context, long minTime, long minDistance, OnLocationChangeListener listener) {
         if (listener == null) return false;
         mLocationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
