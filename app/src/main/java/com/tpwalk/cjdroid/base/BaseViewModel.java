@@ -2,30 +2,28 @@ package com.tpwalk.cjdroid.base;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.databinding.ViewDataBinding;
 
 /**
  * view model 基类
  * Created by Administrator on 2017/6/23.
  */
 
-public class BaseViewModel implements IViewModel {
+public abstract class BaseViewModel implements IViewModel {
     protected Activity mActivity;
 
+    ViewDataBinding dataBinding;
 
     protected void initAll() {
+  
         initView();
         initListener();
         initData();
     }
 
-    protected void initData() {
-    }
-
-    protected void initView() {
-    }
-
-    protected void initListener() {
-    }
+    protected abstract void initData();
+    protected abstract void initView() ;
+    protected abstract void initListener() ;
 
     protected void onBindingData() {
     }

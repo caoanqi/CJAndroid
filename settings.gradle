@@ -1,1 +1,1 @@
-include ':app', ':myLibrary', ':dlLibrary', ':thirdLibrary'
+include ':app', ':cjdroid-myLibrary', ':cjdroid-dlLibrary', ':cjdroid-thirdLibrary'

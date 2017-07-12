@@ -9,9 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/dlLibrary" />
-            <option value="$PROJECT_DIR$/myLibrary" />
-            <option value="$PROJECT_DIR$/thirdLibrary" />
+            <option value="$PROJECT_DIR$/cjdroid-dlLibrary" />
+            <option value="$PROJECT_DIR$/cjdroid-myLibrary" />
+            <option value="$PROJECT_DIR$/cjdroid-thirdLibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

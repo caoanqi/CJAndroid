@@ -32,8 +32,17 @@ public class CommentsViewModel extends BaseViewModel implements InvokeApiCallbac
 
     @Override
     protected void initData() {
-        super.initData();
         CommentServicesImpl.getInstance(mActivity,this).getCommentsAll(mActivity);
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initListener() {
+
     }
 
     @Override
