@@ -38,6 +38,9 @@ public class BaseActivity extends RxAppCompatActivity {
             mToolbar.setNavigationIcon(R.drawable.ic_navigation_back);
             mToolbar.setNavigationOnClickListener(v -> onBackPressed());
         }
+
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
     }
 
     protected void setToolbarTitle(String title) {

@@ -1,13 +1,13 @@
 package com.tpwalk.cjdroid.base;
 
-import android.support.v4.app.Fragment;
+import com.trello.rxlifecycle2.components.support.RxFragment;
 
 /**
  * fragment 基类
  * Created by Administrator on 2017/6/23.
  */
 
-public class BaseFragment extends Fragment {
+public class BaseFragment extends RxFragment {
 
     protected void initView() {
     }

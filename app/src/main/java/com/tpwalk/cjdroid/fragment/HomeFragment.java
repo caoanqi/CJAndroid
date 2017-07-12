@@ -2,7 +2,6 @@ package com.tpwalk.cjdroid.fragment;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -11,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.activity.CommentsActivity;
+import com.tpwalk.cjdroid.adapters.PagerIndicatorAdaptor;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentHomeBinding;
 
@@ -21,6 +21,7 @@ import com.tpwalk.cjdroid.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends BaseFragment {
     FragmentHomeBinding fragmentHomeBinding;
+    PagerIndicatorAdaptor pagerIndicatorAdaptor;
 
     public HomeFragment() {
 
@@ -45,11 +46,16 @@ public class HomeFragment extends BaseFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        fragmentHomeBinding.btnComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent().setClass(getContext(), CommentsActivity.class));
-            }
-        });
+
+        fragmentHomeBinding.btnComment.setOnClickListener(v -> startActivity(new Intent().setClass(getContext(), CommentsActivity.class)));
+        initData();
+    }
+
+    @Override
+    protected void initData() {
+        super.initData();
+        pagerIndicatorAdaptor = new PagerIndicatorAdaptor(getChildFragmentManager());
+        fragmentHomeBinding.homeViewPager.setAdapter(pagerIndicatorAdaptor);
+        fragmentHomeBinding.homeCirclePageIndicator.setViewPager(fragmentHomeBinding.homeViewPager);
     }
 }

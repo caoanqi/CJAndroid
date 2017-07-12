@@ -16,7 +16,7 @@ public class CommentsActivity extends BaseActivity {
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         super.initContentView(savedInstanceState);
-
+        mActivity = this;
         activityCommentsBinding = DataBindingUtil.setContentView(this, R.layout.activity_comments);
         commentsViewModel = new CommentsViewModel(activityCommentsBinding, this);
         activityCommentsBinding.setViewModel(commentsViewModel);

@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.base.BaseFragment;
+import com.tpwalk.cjdroid.databinding.FragmentNotificationBinding;
 
 /**
  * 消息通知
@@ -23,10 +23,13 @@ public class NotificationsFragment extends BaseFragment {
         return new NotificationsFragment();
     }
 
+    FragmentNotificationBinding fragmentNotificationBinding;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_notification, container, false);
+        fragmentNotificationBinding = FragmentNotificationBinding.inflate(inflater, container, false);
+        return fragmentNotificationBinding.getRoot();
     }
 
     @Override
@@ -37,5 +40,7 @@ public class NotificationsFragment extends BaseFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+
     }
 }

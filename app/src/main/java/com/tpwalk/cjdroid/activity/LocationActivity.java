@@ -1,16 +1,17 @@
 package com.tpwalk.cjdroid.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.tpwalk.cjdroid.R;
+import com.tpwalk.cjdroid.base.BaseActivity;
 
-public class LocationActivity extends AppCompatActivity {
+public class LocationActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mActivity = this;
         setContentView(R.layout.activity_location);
     }
 

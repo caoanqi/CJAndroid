@@ -14,6 +14,7 @@ public class SettingActivity extends BaseActivity {
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         super.initContentView(savedInstanceState);
+        mActivity = this;
         activitySettingBinding = DataBindingUtil.setContentView(this, R.layout.activity_setting);
 
     }
