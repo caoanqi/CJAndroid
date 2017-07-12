@@ -11,7 +11,6 @@ import android.databinding.ViewDataBinding;
 
 public abstract class BaseViewModel implements IViewModel {
     protected Activity mActivity;
-
     ViewDataBinding dataBinding;
 
     protected void initAll() {

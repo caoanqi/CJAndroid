@@ -1,9 +1,7 @@
 package com.tpwalk.cjdroid.activity;
 
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.base.BaseActivity;
@@ -24,4 +22,9 @@ public class CommentsActivity extends BaseActivity {
         activityCommentsBinding.setViewModel(commentsViewModel);
     }
 
+    @Override
+    protected void initData() {
+        super.initData();
+        setToolbarTitle("评论");
+    }
 }

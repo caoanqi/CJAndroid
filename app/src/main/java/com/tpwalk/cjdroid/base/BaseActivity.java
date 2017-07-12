@@ -2,21 +2,20 @@ package com.tpwalk.cjdroid.base;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.tpwalk.cjdroid.R;
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 /**
  * activity 基类
  * Created by Administrator on 2017/6/23.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends RxAppCompatActivity {
 
-    private Activity mActivity;
+    protected Activity mActivity;
     private Toolbar mToolbar;
 
     @Override
@@ -35,10 +34,14 @@ public class BaseActivity extends AppCompatActivity {
 
     protected void initToolbar() {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (!mActivity.getClass().getSimpleName().equals("MainActivity")) {
+            mToolbar.setNavigationIcon(R.drawable.ic_navigation_back);
+            mToolbar.setNavigationOnClickListener(v -> onBackPressed());
+        }
     }
 
-    protected void setToolbarTitle() {
-
+    protected void setToolbarTitle(String title) {
+        mToolbar.setTitle(title);
     }
 
     protected void initView() {

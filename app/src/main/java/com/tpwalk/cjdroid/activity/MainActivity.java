@@ -1,12 +1,9 @@
 package com.tpwalk.cjdroid.activity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -47,6 +44,7 @@ public class MainActivity extends BaseActivity {
     protected void initContentView(Bundle savedInstanceState) {
         super.initContentView(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mActivity = this;
     }
 
     @Override

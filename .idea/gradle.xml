@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/cjdroid-dlLibrary" />
             <option value="$PROJECT_DIR$/cjdroid-myLibrary" />
             <option value="$PROJECT_DIR$/cjdroid-thirdLibrary" />
+            <option value="$PROJECT_DIR$/cjdroid-viewpagerindicator" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
