@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
+  <data>
 
-        <variable
-            name="viewModel"
-            type="com.tpwalk.cjdroid.viewmodel.CommentsViewModel" />
-    </data>
+    <variable
+      name="viewModel"
+      type="com.tpwalk.cjdroid.viewmodel.CommentsViewModel" />
+    <import type="me.tatarka.bindingcollectionadapter2.LayoutManagers" />
+  </data>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.tpwalk.cjdroid.activity.CommentsActivity">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tpwalk.cjdroid.activity.CommentsActivity">
 
-        <include layout="@layout/layout_toolbar" />
+    <include layout="@layout/layout_toolbar" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_comments"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layoutManager="LinearLayoutManager" />
-    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/rv_comments"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:adapter="@{viewModel.adapter}"
+      app:itemBinding="@{viewModel.multipleItems}"
+      app:items="@{viewModel.headerFooterItems}"
+      app:layoutManager="@{LayoutManagers.linear()}"
+      app:viewHolder="@{viewModel.viewHolder}" />
+  </LinearLayout>
 
 </layout>

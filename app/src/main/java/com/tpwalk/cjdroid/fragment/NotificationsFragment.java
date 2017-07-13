@@ -1,11 +1,13 @@
 package com.tpwalk.cjdroid.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.tpwalk.cjdroid.activity.setting.SettingActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentNotificationBinding;
 
@@ -16,31 +18,36 @@ import com.tpwalk.cjdroid.databinding.FragmentNotificationBinding;
 
 public class NotificationsFragment extends BaseFragment {
 
-    public NotificationsFragment() {
-    }
+  public NotificationsFragment() {
+  }
 
-    public static NotificationsFragment newInstance() {
-        return new NotificationsFragment();
-    }
+  public static NotificationsFragment newInstance() {
+    return new NotificationsFragment();
+  }
 
-    FragmentNotificationBinding fragmentNotificationBinding;
+  FragmentNotificationBinding fragmentNotificationBinding;
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        fragmentNotificationBinding = FragmentNotificationBinding.inflate(inflater, container, false);
-        return fragmentNotificationBinding.getRoot();
-    }
+  @Nullable
+  @Override
+  public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+      @Nullable Bundle savedInstanceState) {
+    fragmentNotificationBinding = FragmentNotificationBinding.inflate(inflater, container, false);
+    return fragmentNotificationBinding.getRoot();
+  }
 
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-    }
+  @Override
+  public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    super.onViewCreated(view, savedInstanceState);
+  }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+  @Override
+  public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
+
+    fragmentNotificationBinding.rlSetting.setOnClickListener(v -> {
+      startActivity(new Intent().setClass(getActivity(), SettingActivity.class));
+    });
 
 
-    }
+  }
 }
