@@ -23,7 +23,6 @@ public class BaseActivity extends RxAppCompatActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-
     initContentView(savedInstanceState);
     if (!mActivity.getClass().getSimpleName().equals(MainActivity.class.getSimpleName())) {
       initToolbar();

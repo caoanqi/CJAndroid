@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.activity.CommentsActivity;
+import com.tpwalk.cjdroid.activity.anim.AnimaitonActivity;
 import com.tpwalk.cjdroid.adapters.PagerIndicatorAdaptor;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentHomeBinding;
@@ -20,42 +21,49 @@ import com.tpwalk.cjdroid.databinding.FragmentHomeBinding;
  */
 
 public class HomeFragment extends BaseFragment {
-    FragmentHomeBinding fragmentHomeBinding;
-    PagerIndicatorAdaptor pagerIndicatorAdaptor;
 
-    public HomeFragment() {
+  FragmentHomeBinding fragmentHomeBinding;
+  PagerIndicatorAdaptor pagerIndicatorAdaptor;
 
-    }
+  public HomeFragment() {
 
-    public static HomeFragment newInstance() {
-        return new HomeFragment();
-    }
+  }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        fragmentHomeBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false);
-        return fragmentHomeBinding.getRoot();
-    }
+  public static HomeFragment newInstance() {
+    return new HomeFragment();
+  }
 
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-    }
+  @Nullable
+  @Override
+  public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+      @Nullable Bundle savedInstanceState) {
+    fragmentHomeBinding = DataBindingUtil
+        .inflate(inflater, R.layout.fragment_home, container, false);
+    return fragmentHomeBinding.getRoot();
+  }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+  @Override
+  public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    super.onViewCreated(view, savedInstanceState);
+  }
 
-        fragmentHomeBinding.btnComment.setOnClickListener(v -> startActivity(new Intent().setClass(getContext(), CommentsActivity.class)));
-        initData();
-    }
+  @Override
+  public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
 
-    @Override
-    protected void initData() {
-        super.initData();
-        pagerIndicatorAdaptor = new PagerIndicatorAdaptor(getChildFragmentManager());
-        fragmentHomeBinding.homeViewPager.setAdapter(pagerIndicatorAdaptor);
-        fragmentHomeBinding.homeCirclePageIndicator.setViewPager(fragmentHomeBinding.homeViewPager);
-    }
+    fragmentHomeBinding.btnComment.setOnClickListener(
+        v -> startActivity(new Intent().setClass(getContext(), CommentsActivity.class)));
+    fragmentHomeBinding.btnFlingAnim
+        .setOnClickListener(v -> startActivity(new Intent().setClass(getContext(),
+            AnimaitonActivity.class)));
+    initData();
+  }
+
+  @Override
+  protected void initData() {
+    super.initData();
+    pagerIndicatorAdaptor = new PagerIndicatorAdaptor(getChildFragmentManager());
+    fragmentHomeBinding.homeViewPager.setAdapter(pagerIndicatorAdaptor);
+    fragmentHomeBinding.homeCirclePageIndicator.setViewPager(fragmentHomeBinding.homeViewPager);
+  }
 }

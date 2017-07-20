@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp">
+
+      <android.support.v4.view.ViewPager
+        android:id="@+id/home_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="200dp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/home_view_pager"
-                android:layout_width="match_parent"
-                android:layout_height="200dp" />
-
-            <com.tpwalk.cjdroid.viewpagerindicator.CirclePageIndicator
-                android:id="@+id/home_circle_page_indicator"
-                android:layout_width="@dimen/layout_width_150"
-                android:layout_height="@dimen/layout_height_16"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true" />
-        </RelativeLayout>
+      <com.tpwalk.cjdroid.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/home_circle_page_indicator"
+        android:layout_width="@dimen/layout_width_150"
+        android:layout_height="@dimen/layout_height_16"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 
 
-        <Button
-            android:id="@+id/btn_comment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_16"
-            android:text="评论" />
+    <Button
+      android:id="@+id/btn_comment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_16"
+      android:text="评论" />
 
-        <Button
-            android:id="@+id/btn_progress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="彩虹进度" />
-    </LinearLayout>
+    <Button
+      android:id="@+id/btn_progress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="彩虹进度" />
+    <Button
+      android:id="@+id/btn_fling_anim"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="FlingAnimation" />
+  </LinearLayout>
 </layout>

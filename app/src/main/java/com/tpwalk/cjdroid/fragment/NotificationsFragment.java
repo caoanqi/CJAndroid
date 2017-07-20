@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.tpwalk.cjdroid.activity.MyShareActivity;
 import com.tpwalk.cjdroid.activity.setting.SettingActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentNotificationBinding;
@@ -44,9 +45,10 @@ public class NotificationsFragment extends BaseFragment {
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
 
-    fragmentNotificationBinding.rlSetting.setOnClickListener(v -> {
-      startActivity(new Intent().setClass(getActivity(), SettingActivity.class));
-    });
+    fragmentNotificationBinding.rlSetting.setOnClickListener(
+        v -> startActivity(new Intent().setClass(getActivity(), SettingActivity.class)));
+    fragmentNotificationBinding.rlShare.setOnClickListener(
+        v -> startActivity(new Intent().setClass(getActivity(), MyShareActivity.class)));
 
 
   }
