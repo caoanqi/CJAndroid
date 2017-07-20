@@ -26,7 +26,8 @@
     <activity android:name=".activity.CommentsActivity" />
     <activity android:name=".activity.setting.SettingActivity" />
     <activity android:name=".activity.anim.AnimaitonActivity" />
-    <activity android:name=".activity.MyShareActivity"></activity>
+    <activity android:name=".activity.share.MyShareActivity" />
+    <activity android:name=".activity.share.UMengShareActivity"></activity>
   </application>
 
 </manifest>

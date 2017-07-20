@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tpwalk.cjdroid.activity.MyShareActivity;
+import com.tpwalk.cjdroid.activity.share.MyShareActivity;
 import com.tpwalk.cjdroid.activity.setting.SettingActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentNotificationBinding;

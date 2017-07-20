@@ -7,7 +7,7 @@
   <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tpwalk.cjdroid.activity.MyShareActivity">
+    tools:context="com.tpwalk.cjdroid.activity.share.MyShareActivity">
     <include layout="@layout/layout_toolbar" />
     <Button
       android:id="@+id/btn_intent_share"
