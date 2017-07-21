@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/cjdroid-dlLibrary/cjdroid-dlLibrary.iml" filepath="$PROJECT_DIR$/cjdroid-dlLibrary/cjdroid-dlLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-myLibrary/cjdroid-myLibrary.iml" filepath="$PROJECT_DIR$/cjdroid-myLibrary/cjdroid-myLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-thirdLibrary/cjdroid-thirdLibrary.iml" filepath="$PROJECT_DIR$/cjdroid-thirdLibrary/cjdroid-thirdLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cjdroid-utils/cjdroid-utils.iml" filepath="$PROJECT_DIR$/cjdroid-utils/cjdroid-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-viewpagerindicator/cjdroid-viewpagerindicator.iml" filepath="$PROJECT_DIR$/cjdroid-viewpagerindicator/cjdroid-viewpagerindicator.iml" />
     </modules>
   </component>

@@ -1,1 +1,1 @@
-include ':app', ':cjdroid-myLibrary', ':cjdroid-dlLibrary', ':cjdroid-thirdLibrary', ':cjdroid-viewpagerindicator'
+include ':app', ':cjdroid-myLibrary', ':cjdroid-dlLibrary', ':cjdroid-thirdLibrary', ':cjdroid-viewpagerindicator', ':cjdroid-utils'

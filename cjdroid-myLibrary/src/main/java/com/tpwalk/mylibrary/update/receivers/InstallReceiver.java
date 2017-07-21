@@ -7,8 +7,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import com.tpwalk.cjdroid.utils.LogUtils;
 import com.tpwalk.mylibrary.update.utils.PrefsConsts;
-import com.tpwalk.mylibrary.utils.LogUtils;
+
 
 
 /**
