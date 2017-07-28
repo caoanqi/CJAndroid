@@ -8,7 +8,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tpwalk.cjdroid.activity.share.MyShareActivity">
-    <include layout="@layout/layout_toolbar" />
+    <include layout="@layout/layout_toolbar"
+      android:id="@+id/include2" />
     <Button
       android:id="@+id/btn_intent_share"
       android:layout_width="wrap_content"
@@ -30,6 +31,14 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_intent_share"
       tools:layout_editor_absoluteX="57dp"
       tools:layout_editor_absoluteY="118dp" />
+    <Button
+      android:id="@+id/btn_hrowser_share"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="浏览器分享"
+      android:layout_marginTop="112dp"
+      app:layout_constraintTop_toBottomOf="@+id/btn_umeng_share"
+      app:layout_constraintEnd_toEndOf="@+id/btn_umeng_share" />
   </android.support.constraint.ConstraintLayout>
 
 </layout>

@@ -5,6 +5,7 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.databinding.DataBindingUtil;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.base.BaseActivity;
 import com.tpwalk.cjdroid.databinding.ActivityMyShareBinding;
+import com.tpwalk.cjdroid.utils.AppUtils;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +40,29 @@ public class MyShareActivity extends BaseActivity {
     activityMyShareBinding.btnIntentShare.setOnClickListener(v -> intentShare());
     activityMyShareBinding.btnUmengShare.setOnClickListener(
         v -> startActivity(new Intent().setClass(MyShareActivity.this, UMengShareActivity.class)));
+    activityMyShareBinding.btnHrowserShare.setOnClickListener(v -> openBrowserShare());
+
+  }
+
+  private void openBrowserShare() {
+
+    if (AppUtils.isInstallApp(MyShareActivity.this, "com.tencent.mtt")) {
+      Intent it = new Intent();
+      it.setAction("android.intent.action.VIEW");
+      Uri content_url = Uri.parse("http://m.riztz.com/fx/demo.html");
+      it.setData(content_url);
+      it.setClassName("com.tencent.mtt", "com.tencent.mtt.MainActivity");
+      startActivity(it);
+
+//      Intent intent = new Intent();
+//      intent.setAction("android.intent.action.VIEW");
+//      Uri content_url = Uri.parse("http://m.riztz.com/fx/demo.html");
+//      intent.setData(content_url);
+//      startActivity(intent);
+    } else {
+      Toast.makeText(MyShareActivity.this, "没有安装，请安装QQ浏览器", Toast.LENGTH_SHORT).show();
+    }
+
 
   }
 
