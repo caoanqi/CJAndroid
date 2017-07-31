@@ -3,7 +3,12 @@
   package="com.tpwalk.cjdroid">
 
   <uses-permission android:name="android.permission.INTERNET" />
-
+  !-- 申请腾讯X5所需权限 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
   <application
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
@@ -27,13 +32,13 @@
     <activity android:name=".activity.setting.SettingActivity" />
     <activity android:name=".activity.anim.AnimaitonActivity" />
 
-    <!--分享-->
+    <!-- 分享 -->
     <activity
       android:name=".activity.share.MyShareActivity"
       android:screenOrientation="portrait">
-
       <intent-filter>
         <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
+
         <category android:name="android.intent.category.DEFAULT" />
       </intent-filter>
       <intent-filter>
@@ -77,17 +82,18 @@
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.MEDIA_SEARCH" />
+
         <category android:name="android.intent.category.DEFAULT" />
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.SEARCH" />
+
         <category android:name="android.intent.category.DEFAULT" />
       </intent-filter>
-      <!--<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />-->
+      <!-- <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" /> -->
     </activity>
-    <activity android:name=".activity.share.UMengShareActivity"/>
-
-
+    <activity android:name=".activity.share.UMengShareActivity" />
+    <activity android:name=".activity.webs.QQWebViewActivity"></activity>
   </application>
 
 </manifest>
