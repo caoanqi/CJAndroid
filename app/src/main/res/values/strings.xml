@@ -1,6 +1,7 @@
 <resources>
   <string name="app_name">机器人</string>
-  <string name="title_home">Home</string>
-  <string name="title_dashboard">Dashboard</string>
-  <string name="title_notifications">Notifications</string>
+  <!--首页Tab 标题-->
+  <string name="title_home">新闻</string>
+  <string name="title_dashboard">视频</string>
+  <string name="title_notifications">我的</string>
 </resources>

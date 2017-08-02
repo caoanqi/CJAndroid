@@ -2,6 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'realm-android'
 android {
+    signingConfigs {
+        config {
+            keyAlias 'cjd'
+            keyPassword '123456'
+            storeFile file('F:/MyCase/CJAndroid/app/signs/cjdroid.jks')
+            storePassword 'cj1234'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "26.0.0"
     defaultConfig {
@@ -13,23 +21,18 @@ android {
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
-
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
-
     dataBinding {
         enabled true
-    }
-
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
     }
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
@@ -44,14 +47,17 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':cjdroid-dlLibrary')
     compile project(':cjdroid-viewpagerindicator')
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'com.android.support:design:25.4.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:support-vector-drawable:25.4.0'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:support-dynamic-animation:25.4.0'
     compile files('libs/tencentX5WebView.jar')
     compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
     compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile('com.alibaba.android:ultraviewpager:1.0.4@aar') {
+        transitive = true
+    }
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    compile 'com.android.support:support-vector-drawable:25.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-dynamic-animation:25.4.0'
 }

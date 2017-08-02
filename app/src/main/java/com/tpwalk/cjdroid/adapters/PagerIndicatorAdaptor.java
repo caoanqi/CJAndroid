@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.tpwalk.cjdroid.fragment.HomePagerIndicatorFragment;
+import com.tpwalk.cjdroid.fragment.NewsScrollPagerFragment;
 
 /**
  * Created by caoyoulin on 2017/7/12.
@@ -20,7 +20,7 @@ public class PagerIndicatorAdaptor extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return HomePagerIndicatorFragment.newInstance(CONTENT[position % CONTENT.length]);
+        return NewsScrollPagerFragment.newInstance(CONTENT[position % CONTENT.length]);
     }
 
     @Override

@@ -13,11 +13,11 @@ import android.widget.LinearLayout;
  * Created by caoyoulin on 2017/7/12.
  */
 
-public class HomePagerIndicatorFragment extends Fragment {
+public class NewsScrollPagerFragment extends Fragment {
     private static final String KEY_CONTENT = "TestFragment:Content";
 
-    public static HomePagerIndicatorFragment newInstance(String content) {
-        HomePagerIndicatorFragment fragment = new HomePagerIndicatorFragment();
+    public static NewsScrollPagerFragment newInstance(String content) {
+        NewsScrollPagerFragment fragment = new NewsScrollPagerFragment();
 
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < 20; i++) {

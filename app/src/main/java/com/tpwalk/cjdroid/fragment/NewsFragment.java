@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.tpwalk.cjdroid.R;
-import com.tpwalk.cjdroid.activity.CommentsActivity;
+import com.tpwalk.cjdroid.activity.news.CommentsActivity;
 import com.tpwalk.cjdroid.activity.anim.AnimaitonActivity;
 import com.tpwalk.cjdroid.adapters.PagerIndicatorAdaptor;
 import com.tpwalk.cjdroid.base.BaseFragment;
@@ -20,17 +20,17 @@ import com.tpwalk.cjdroid.databinding.FragmentHomeBinding;
  * Created by Administrator on 2017/6/23.
  */
 
-public class HomeFragment extends BaseFragment {
+public class NewsFragment extends BaseFragment {
 
   FragmentHomeBinding fragmentHomeBinding;
   PagerIndicatorAdaptor pagerIndicatorAdaptor;
 
-  public HomeFragment() {
+  public NewsFragment() {
 
   }
 
-  public static HomeFragment newInstance() {
-    return new HomeFragment();
+  public static NewsFragment newInstance() {
+    return new NewsFragment();
   }
 
   @Nullable

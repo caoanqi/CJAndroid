@@ -1,2 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tpwalk.thirdlibrary" />
+  package="com.tpwalk.thirdlibrary">
+
+  <meta-data
+    android:name="com.baidu.lbsapi.API_KEY"
+    android:value="RzsGj2MquvHfcBFG50WoGPBaMz2EZ118" />
+</manifest>

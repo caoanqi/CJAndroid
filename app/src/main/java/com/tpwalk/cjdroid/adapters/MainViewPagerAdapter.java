@@ -5,9 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
-import com.tpwalk.cjdroid.fragment.DashboardFragment;
-import com.tpwalk.cjdroid.fragment.HomeFragment;
-import com.tpwalk.cjdroid.fragment.NotificationsFragment;
+import com.tpwalk.cjdroid.fragment.VideoFragment;
+import com.tpwalk.cjdroid.fragment.NewsFragment;
+import com.tpwalk.cjdroid.fragment.MineFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +23,9 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
 
     public MainViewPagerAdapter(FragmentManager fm) {
         super(fm);
-        mFragments.add(HomeFragment.newInstance());
-        mFragments.add(DashboardFragment.newInstance());
-        mFragments.add(NotificationsFragment.newInstance());
+        mFragments.add(NewsFragment.newInstance());
+        mFragments.add(VideoFragment.newInstance());
+        mFragments.add(MineFragment.newInstance());
     }
 
     @Override

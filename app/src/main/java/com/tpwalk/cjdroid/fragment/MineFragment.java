@@ -17,13 +17,13 @@ import com.tpwalk.cjdroid.databinding.FragmentNotificationBinding;
  * Created by Administrator on 2017/6/23.
  */
 
-public class NotificationsFragment extends BaseFragment {
+public class MineFragment extends BaseFragment {
 
-  public NotificationsFragment() {
+  public MineFragment() {
   }
 
-  public static NotificationsFragment newInstance() {
-    return new NotificationsFragment();
+  public static MineFragment newInstance() {
+    return new MineFragment();
   }
 
   FragmentNotificationBinding fragmentNotificationBinding;

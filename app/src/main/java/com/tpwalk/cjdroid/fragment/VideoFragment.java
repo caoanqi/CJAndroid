@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.tpwalk.cjdroid.activity.LocationActivity;
+import com.tpwalk.cjdroid.activity.news.LocationActivity;
 import com.tpwalk.cjdroid.activity.webs.QQWebViewActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentDashboardBinding;
@@ -16,16 +16,16 @@ import com.tpwalk.cjdroid.databinding.FragmentDashboardBinding;
  * Created by Administrator on 2017/6/23.
  */
 
-public class DashboardFragment extends BaseFragment {
+public class VideoFragment extends BaseFragment {
 
-  public DashboardFragment() {
+  public VideoFragment() {
 
   }
 
   FragmentDashboardBinding dashboardBinding;
 
-  public static DashboardFragment newInstance() {
-    return new DashboardFragment();
+  public static VideoFragment newInstance() {
+    return new VideoFragment();
   }
 
   @Nullable

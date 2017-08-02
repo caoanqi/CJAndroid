@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity;
+package com.tpwalk.cjdroid.activity.news;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
