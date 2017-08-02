@@ -3,7 +3,7 @@ apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'realm-android'
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    buildToolsVersion "26.0.0"
     defaultConfig {
         applicationId "com.tpwalk.cjdroid"
         minSdkVersion 17
@@ -26,12 +26,17 @@ android {
         enabled true
     }
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
     }
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_7
-        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -48,4 +53,5 @@ dependencies {
     compile 'com.android.support:support-dynamic-animation:25.4.0'
     compile files('libs/tencentX5WebView.jar')
     compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
+    compile files('libs/BaiduLBS_Android.jar')
 }

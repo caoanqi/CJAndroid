@@ -1,47 +1,42 @@
 package com.tpwalk.cjdroid.activity;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-
+import com.baidu.mapapi.SDKInitializer;
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.base.BaseActivity;
+import com.tpwalk.cjdroid.databinding.ActivityLocationBinding;
 
+/**
+ * 定位
+ */
 public class LocationActivity extends BaseActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mActivity = this;
-        setContentView(R.layout.activity_location);
-    }
+  ActivityLocationBinding activityLocationBinding;
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-    }
+  @Override
+  protected void initContentView(Bundle savedInstanceState) {
+    super.initContentView(savedInstanceState);
+    //在使用SDK各组件之前初始化context信息，传入ApplicationContext
+    //注意该方法要再setContentView方法之前实现
+    SDKInitializer.initialize(getApplicationContext());
+    mActivity = this;
 
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
+    activityLocationBinding = DataBindingUtil.setContentView(this, R.layout.activity_location);
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
+  }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
+  @Override
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+  }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
+  @Override
+  protected void initData() {
+    super.initData();
+    setToolbarTitle("百度地图");
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
+
+  }
 }

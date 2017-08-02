@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.tpwalk.cjdroid.activity.LocationActivity;
 import com.tpwalk.cjdroid.activity.webs.QQWebViewActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentDashboardBinding;
@@ -41,6 +42,9 @@ public class DashboardFragment extends BaseFragment {
     dashboardBinding.btnWebView
         .setOnClickListener(v -> startActivity(new Intent().setClass(getContext(),
             QQWebViewActivity.class)));
+    dashboardBinding.bdMapView
+        .setOnClickListener(v -> startActivity(new Intent().setClass(getContext(),
+            LocationActivity.class)));
   }
 
   @Override

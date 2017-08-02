@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.tpwalk.cjdroid.activity.LocationActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include layout="@layout/layout_toolbar" />
+
+    <com.baidu.mapapi.map.MapView
+      android:id="@+id/bmap_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clickable="true" />
+
+  </LinearLayout>
+
+</layout>
