@@ -6,6 +6,7 @@
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.tpwalk.cjdroid.activity.citys.CityChooseActivity">
 
     <include layout="@layout/layout_toolbar" />
@@ -28,7 +29,7 @@
       android:layout_weight="2.89"
       android:scrollbars="vertical"
       android:text=" "
-      android:textColor="#ffffffff" />
+      android:textColor="#000000" />
 
   </LinearLayout>
 

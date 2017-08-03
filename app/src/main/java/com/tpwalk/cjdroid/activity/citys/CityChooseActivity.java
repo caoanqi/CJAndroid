@@ -1,5 +1,7 @@
 package com.tpwalk.cjdroid.activity.citys;
 
+import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
@@ -12,6 +14,8 @@ import com.baidu.location.Poi;
 import com.tpwalk.cjdroid.CjDroidApplication;
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.base.BaseActivity;
+import com.tpwalk.cjdroid.citypicker.CityPickerActivity;
+import com.tpwalk.cjdroid.databinding.ActivityCityChooseBinding;
 import com.tpwalk.cjdroid.service.LocationService;
 
 public class CityChooseActivity extends BaseActivity {
@@ -20,10 +24,13 @@ public class CityChooseActivity extends BaseActivity {
   private TextView LocationResult;
   private Button startLocation;
 
+  ActivityCityChooseBinding activityCityChooseBinding;
+
   @Override
   protected void initContentView(Bundle savedInstanceState) {
     super.initContentView(savedInstanceState);
-    setContentView(R.layout.activity_city_choose);
+    mActivity = this;
+    activityCityChooseBinding = DataBindingUtil.setContentView(this, R.layout.activity_city_choose);
     LocationResult = (TextView) findViewById(R.id.textView1);
     LocationResult.setMovementMethod(ScrollingMovementMethod.getInstance());
     startLocation = (Button) findViewById(R.id.addfence);
@@ -63,6 +70,13 @@ public class CityChooseActivity extends BaseActivity {
     }
   }
 
+  @Override
+  protected void initListener() {
+    super.initListener();
+    activityCityChooseBinding.btnCityList
+        .setOnClickListener(v -> startActivity(new Intent().setClass(CityChooseActivity.this,
+            CityPickerActivity.class)));
+  }
 
   /***
    * Stop location service
