@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CJAndroid.iml" filepath="$PROJECT_DIR$/CJAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cjdroid-citypicker/cjdroid-citypicker.iml" filepath="$PROJECT_DIR$/cjdroid-citypicker/cjdroid-citypicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-dlLibrary/cjdroid-dlLibrary.iml" filepath="$PROJECT_DIR$/cjdroid-dlLibrary/cjdroid-dlLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-myLibrary/cjdroid-myLibrary.iml" filepath="$PROJECT_DIR$/cjdroid-myLibrary/cjdroid-myLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-network/cjdroid-network.iml" filepath="$PROJECT_DIR$/cjdroid-network/cjdroid-network.iml" />

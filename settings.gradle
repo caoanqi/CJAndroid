@@ -1,1 +1,1 @@
-include ':app', ':cjdroid-myLibrary', ':cjdroid-dlLibrary', ':cjdroid-thirdLibrary', ':cjdroid-viewpagerindicator', ':cjdroid-utils', ':cjdroid-network'
+include ':app', ':cjdroid-myLibrary', ':cjdroid-dlLibrary', ':cjdroid-thirdLibrary', ':cjdroid-viewpagerindicator', ':cjdroid-utils', ':cjdroid-network', ':cjdroid-citypicker'

@@ -1,8 +1,12 @@
 package com.tpwalk.cjdroid;
 
+import android.app.Service;
+import android.os.Vibrator;
 import android.support.multidex.MultiDexApplication;
 import android.util.Log;
+import com.baidu.mapapi.SDKInitializer;
 import com.tencent.smtt.sdk.QbSdk;
+import com.tpwalk.cjdroid.service.LocationService;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
@@ -12,13 +16,30 @@ import io.realm.RealmConfiguration;
 
 public class CjDroidApplication extends MultiDexApplication {
 
+  public LocationService locationService;
+
+  public Vibrator mVibrator;
   @Override
   public void onCreate() {
     super.onCreate();
 
     initRelam();
     initQQWebKit();
+    initBdMap();
 
+
+  }
+
+  /**
+   * 初始化地图
+   */
+  private void initBdMap() {
+    /***
+     * 初始化定位sdk，建议在Application中创建
+     */
+    locationService = new LocationService(getApplicationContext());
+    mVibrator =(Vibrator)getApplicationContext().getSystemService(Service.VIBRATOR_SERVICE);
+    SDKInitializer.initialize(getApplicationContext());
   }
 
   /*

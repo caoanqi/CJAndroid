@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.tpwalk.cjdroid.activity.citys.CityChooseActivity;
 import com.tpwalk.cjdroid.activity.share.MyShareActivity;
 import com.tpwalk.cjdroid.activity.setting.SettingActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
@@ -49,6 +50,9 @@ public class MineFragment extends BaseFragment {
         v -> startActivity(new Intent().setClass(getActivity(), SettingActivity.class)));
     fragmentNotificationBinding.rlShare.setOnClickListener(
         v -> startActivity(new Intent().setClass(getActivity(), MyShareActivity.class)));
+    fragmentNotificationBinding.rlCityChoose.setOnClickListener(
+        v -> startActivity(new Intent().setClass(getActivity(), CityChooseActivity.class)));
+
 
 
   }

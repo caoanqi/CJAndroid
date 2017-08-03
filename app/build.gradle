@@ -49,15 +49,15 @@ dependencies {
     compile project(':cjdroid-viewpagerindicator')
     compile files('libs/tencentX5WebView.jar')
     compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
-    compile files('libs/BaiduLBS_Android.jar')
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile('com.alibaba.android:ultraviewpager:1.0.4@aar') {
         transitive = true
     }
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:appcompat-v7:25.4.0'
     compile 'com.android.support:design:25.4.0'
     compile 'com.android.support:support-vector-drawable:25.4.0'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support:support-dynamic-animation:25.4.0'
+    compile project(':cjdroid-citypicker')
 }
