@@ -2,6 +2,21 @@ apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'realm-android'
 android {
+
+
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        applicationId "com.tpwalk.cjdroid"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
     signingConfigs {
         config {
             keyAlias 'cjd'
@@ -10,17 +25,7 @@ android {
             storePassword 'cj1234'
         }
     }
-    compileSdkVersion 25
-    buildToolsVersion "26.0.0"
-    defaultConfig {
-        applicationId "com.tpwalk.cjdroid"
-        minSdkVersion 17
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
-        vectorDrawables.useSupportLibrary = true
-        multiDexEnabled true
-    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -40,6 +45,12 @@ android {
     compileOptions {
         targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
     }
 }
 

@@ -74,8 +74,7 @@ public class CityChooseActivity extends BaseActivity {
   protected void initListener() {
     super.initListener();
     activityCityChooseBinding.btnCityList
-        .setOnClickListener(v -> startActivity(new Intent().setClass(CityChooseActivity.this,
-            CityPickerActivity.class)));
+        .setOnClickListener(v -> startActivity(new Intent().setClass(CityChooseActivity.this, CityPickerActivity.class)));
   }
 
   /***
