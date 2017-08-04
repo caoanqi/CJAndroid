@@ -27,7 +27,8 @@ import com.tpwalk.cjdroid.citypicker.view.SideLetterBar;
 import java.util.List;
 
 /**
- * Author Bro0cL on 2016/12/16.
+ * 城市选择
+ * 采用百度地图
  */
 public class CityPickerActivity extends AppCompatActivity implements View.OnClickListener {
 

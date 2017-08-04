@@ -1,7 +1,7 @@
 package com.tpwalk.cjdroid.citypicker.model;
 
 /**
- * author zaaach on 2016/1/26.
+ * 城市
  */
 public class City {
     private String name;

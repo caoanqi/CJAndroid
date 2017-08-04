@@ -1,7 +1,7 @@
 package com.tpwalk.cjdroid.citypicker.model;
 
 /**
- * author zaaach on 2016/1/26.
+ * 未知状态
  */
 public class LocateState {
     public static final int LOCATING    = 111;

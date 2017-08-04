@@ -12,7 +12,7 @@ import java.util.List;
 
 
 /**
- * author zaaach on 2016/1/26.
+ * 搜索结果列表
  */
 public class ResultListAdapter extends BaseAdapter {
     private Context mContext;
