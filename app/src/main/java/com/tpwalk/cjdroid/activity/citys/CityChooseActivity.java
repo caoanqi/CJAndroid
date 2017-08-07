@@ -15,6 +15,7 @@ import com.tpwalk.cjdroid.CjDroidApplication;
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.base.BaseActivity;
 import com.tpwalk.cjdroid.citypicker.CityPickerActivity;
+import com.tpwalk.cjdroid.citypicker.CityPickerWithoutHotActivity;
 import com.tpwalk.cjdroid.databinding.ActivityCityChooseBinding;
 import com.tpwalk.cjdroid.service.LocationService;
 
@@ -74,7 +75,11 @@ public class CityChooseActivity extends BaseActivity {
   protected void initListener() {
     super.initListener();
     activityCityChooseBinding.btnCityList
-        .setOnClickListener(v -> startActivity(new Intent().setClass(CityChooseActivity.this, CityPickerActivity.class)));
+        .setOnClickListener(v -> startActivity(
+            new Intent().setClass(CityChooseActivity.this, CityPickerActivity.class)));
+    activityCityChooseBinding.btnCityListNoHot
+        .setOnClickListener(v -> startActivity(new Intent().setClass(CityChooseActivity.this,
+            CityPickerWithoutHotActivity.class)));
   }
 
   /***

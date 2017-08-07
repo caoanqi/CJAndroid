@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.service;
+package com.tpwalk.cjdroid.citypicker.service;
 
 import android.content.Context;
 import com.baidu.location.BDLocationListener;

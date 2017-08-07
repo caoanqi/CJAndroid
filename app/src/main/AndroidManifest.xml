@@ -66,6 +66,11 @@
       android:screenOrientation="portrait"
       android:theme="@style/CityPicker.NoActionBar"
       android:windowSoftInputMode="stateHidden|adjustPan" />
+    <activity
+      android:name=".citypicker.CityPickerWithoutHotActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/CityPicker.NoActionBar"
+      android:windowSoftInputMode="stateHidden|adjustPan" />
     <!-- 分享 -->
     <activity
       android:name=".activity.share.MyShareActivity"

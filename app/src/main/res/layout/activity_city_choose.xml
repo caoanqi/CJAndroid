@@ -17,6 +17,11 @@
       android:layout_height="wrap_content"
       android:text="城市列表" />
     <Button
+      android:id="@+id/btn_city_list_no_hot"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="城市列表不包含热门城市" />
+    <Button
       android:id="@+id/addfence"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
