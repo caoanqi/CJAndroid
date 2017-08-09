@@ -6,8 +6,8 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.tpwalk.cjdroid.activity.citys.LocationActivity;
-import com.tpwalk.cjdroid.activity.webs.QQWebViewActivity;
+import com.tpwalk.cjdroid.activity.mine.tools.citys.LocationActivity;
+import com.tpwalk.cjdroid.activity.mine.tools.webs.QQWebViewActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentDashboardBinding;
 
@@ -39,12 +39,7 @@ public class VideoFragment extends BaseFragment {
   @Override
   public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
-    dashboardBinding.btnWebView
-        .setOnClickListener(v -> startActivity(new Intent().setClass(getContext(),
-            QQWebViewActivity.class)));
-    dashboardBinding.bdMapView
-        .setOnClickListener(v -> startActivity(new Intent().setClass(getContext(),
-            LocationActivity.class)));
+
   }
 
   @Override

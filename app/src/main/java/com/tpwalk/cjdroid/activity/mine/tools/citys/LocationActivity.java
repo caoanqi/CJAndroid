@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity.citys;
+package com.tpwalk.cjdroid.activity.mine.tools.citys;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;

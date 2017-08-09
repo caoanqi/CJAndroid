@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity.anim;
+package com.tpwalk.cjdroid.activity.mine.tools.anim;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;

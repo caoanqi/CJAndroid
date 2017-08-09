@@ -6,7 +6,7 @@
   <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tpwalk.cjdroid.activity.share.UMengShareActivity">
+    tools:context=".activity.mine.tools.share.UMengShareActivity">
 
     <include layout="@layout/layout_toolbar"
       android:id="@+id/include" />

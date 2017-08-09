@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity.share;
+package com.tpwalk.cjdroid.activity.mine.tools.share;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;

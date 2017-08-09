@@ -39,7 +39,7 @@
       </intent-filter>
     </service>
 
-    <!--百度地图Apikey-->
+    <!-- 百度地图Apikey -->
     <meta-data
       android:name="com.baidu.lbsapi.API_KEY"
       android:value="RzsGj2MquvHfcBFG50WoGPBaMz2EZ118" />
@@ -57,10 +57,10 @@
     <activity
       android:name=".activity.MainActivity"
       android:screenOrientation="portrait" />
-    <activity android:name=".activity.citys.LocationActivity" />
+    <activity android:name=".activity.mine.tools.citys.LocationActivity" />
     <activity android:name=".activity.news.CommentsActivity" />
-    <activity android:name=".activity.setting.SettingActivity" />
-    <activity android:name=".activity.anim.AnimaitonActivity" />
+    <activity android:name=".activity.mine.setting.SettingActivity" />
+    <activity android:name=".activity.mine.tools.anim.AnimaitonActivity" />
     <activity
       android:name=".citypicker.CityPickerActivity"
       android:screenOrientation="portrait"
@@ -73,7 +73,7 @@
       android:windowSoftInputMode="stateHidden|adjustPan" />
     <!-- 分享 -->
     <activity
-      android:name=".activity.share.MyShareActivity"
+      android:name=".activity.mine.tools.share.MyShareActivity"
       android:screenOrientation="portrait">
       <intent-filter>
         <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
@@ -129,12 +129,13 @@
         <category android:name="android.intent.category.DEFAULT" />
       </intent-filter>
     </activity>
-    <activity android:name=".activity.share.UMengShareActivity" />
-    <activity android:name=".activity.webs.QQWebViewActivity" />
+    <activity android:name=".activity.mine.tools.share.UMengShareActivity" />
+    <activity android:name=".activity.mine.tools.webs.QQWebViewActivity" />
     <activity android:name=".activity.login.LoginActivity" />
     <activity android:name=".activity.login.RegisterActivity" />
     <activity android:name=".activity.login.ForgotPasswordActivity" />
-    <activity android:name=".activity.citys.CityChooseActivity"></activity>
+    <activity android:name=".activity.mine.tools.citys.CityChooseActivity" />
+    <activity android:name=".activity.mine.MyToolsActivity"></activity>
   </application>
 
 </manifest>

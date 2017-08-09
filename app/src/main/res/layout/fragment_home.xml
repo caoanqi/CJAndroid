@@ -24,22 +24,6 @@
     </RelativeLayout>
 
 
-    <Button
-      android:id="@+id/btn_comment"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="@dimen/margin_16"
-      android:text="评论" />
 
-    <Button
-      android:id="@+id/btn_progress"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="彩虹进度" />
-    <Button
-      android:id="@+id/btn_fling_anim"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="FlingAnimation" />
   </LinearLayout>
 </layout>

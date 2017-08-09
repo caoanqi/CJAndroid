@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity.webs;
+package com.tpwalk.cjdroid.activity.mine.tools.webs;
 
 
 import android.annotation.SuppressLint;

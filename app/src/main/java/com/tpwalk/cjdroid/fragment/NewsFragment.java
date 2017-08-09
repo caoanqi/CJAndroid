@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.activity.news.CommentsActivity;
-import com.tpwalk.cjdroid.activity.anim.AnimaitonActivity;
+import com.tpwalk.cjdroid.activity.mine.tools.anim.AnimaitonActivity;
 import com.tpwalk.cjdroid.adapters.PagerIndicatorAdaptor;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentHomeBinding;
@@ -51,11 +51,7 @@ public class NewsFragment extends BaseFragment {
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
 
-    fragmentHomeBinding.btnComment.setOnClickListener(
-        v -> startActivity(new Intent().setClass(getContext(), CommentsActivity.class)));
-    fragmentHomeBinding.btnFlingAnim
-        .setOnClickListener(v -> startActivity(new Intent().setClass(getContext(),
-            AnimaitonActivity.class)));
+
     initData();
   }
 

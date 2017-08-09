@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity.share;
+package com.tpwalk.cjdroid.activity.mine.tools.share;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity.setting;
+package com.tpwalk.cjdroid.activity.mine.setting;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
