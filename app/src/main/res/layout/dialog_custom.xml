@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:background="@color/cp_alpha_gray"
+  android:orientation="vertical"
+  tools:layout_editor_absoluteX="0dp"
+  tools:layout_editor_absoluteY="25dp">
+
+  <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/dialog_layout_coners"
+    android:orientation="vertical"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.988"
+    app:layout_constraintBottom_toTopOf="@+id/btn_dialog_cancel">
+    <Button
+      android:id="@+id/btn_un_register_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent"
+      android:text="未注册用户登录"
+      android:textColor="#0c7aff" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#c5c8ca" />
+    <Button
+      android:id="@+id/btn_register_id_card_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent"
+      android:text="注册用户,身份证登录"
+      android:textColor="#0c7aff" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#c5c8ca" />
+    <Button
+      android:id="@+id/btn_register_provident_fund_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent"
+      android:text="注册用户,公积金账号登录"
+      android:textColor="#0c7aff" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#c5c8ca" />
+    <Button
+      android:id="@+id/btn_register_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent"
+      android:text="注册用户,用户名登录"
+      android:textColor="#0c7aff" />
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/btn_dialog_cancel"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="36dp"
+    android:layout_marginLeft="@dimen/margin_16"
+    android:layout_marginRight="@dimen/margin_16"
+    android:background="@drawable/dialog_layout_coners"
+    android:text="取消"
+    android:textColor="#0c7aff"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

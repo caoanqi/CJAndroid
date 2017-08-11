@@ -20,6 +20,7 @@ public class TabActivity extends BaseActivity {
   @Override
   protected void initContentView(Bundle savedInstanceState) {
     super.initContentView(savedInstanceState);
+    mActivity=this;
     activityTabBinding = DataBindingUtil.setContentView(this, R.layout.activity_tab);
   }
 
@@ -38,6 +39,7 @@ public class TabActivity extends BaseActivity {
   @Override
   protected void initData() {
     super.initData();
+    setToolbarTitle("Tab");
   }
 
   public View getTabView(int position) {

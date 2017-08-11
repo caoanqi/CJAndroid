@@ -2,26 +2,41 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools">
-  <data></data>
+  <data>
+    <variable
+      name="viewModel"
+      type="com.tpwalk.cjdroid.activity.mine.tools.dialogs.MyDialogViewModel" />
+  </data>
   <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tpwalk.cjdroid.activity.mine.tools.dialogs.MyDialogActivity">
 
+    <include
+      android:id="@+id/include4"
+      layout="@layout/layout_toolbar" />
     <Button
-      android:id="@+id/button5"
+      android:id="@+id/btn_half_trance_dialog"
       android:layout_width="358dp"
       android:layout_height="wrap_content"
+      android:layout_marginTop="28dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
       android:text="半透明dialog"
-      tools:layout_editor_absoluteX="8dp"
-      tools:layout_editor_absoluteY="4dp" />
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/include4" />
     <Button
-      android:id="@+id/button6"
+      android:id="@+id/btn_half_trance_popup"
       android:layout_width="359dp"
       android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
       android:text="半透明popup"
-      tools:layout_editor_absoluteX="8dp"
-      tools:layout_editor_absoluteY="59dp" />
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/btn_half_trance_dialog" />
   </android.support.constraint.ConstraintLayout>
 
 </layout>

@@ -1,4 +1,4 @@
-package com.tpwalk.cjdroid.activity;
+package com.tpwalk.cjdroid.activity.mine.tools;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

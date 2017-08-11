@@ -10,6 +10,8 @@
     android:layout_height="match_parent"
     tools:context="com.tpwalk.cjdroid.activity.mine.tools.tab.TabActivity">
 
+    <include layout="@layout/layout_toolbar" />
+
     <android.support.design.widget.TabLayout
       android:id="@+id/tabLayout"
       android:layout_width="0dp"
@@ -19,13 +21,11 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:layout_editor_absoluteX="8dp"
-      tools:layout_editor_absoluteY="0dp">
+      android:layout_marginTop="76dp">
 
       <android.support.design.widget.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:icon="@drawable/ic_next_right"
         android:text="请选择1" />
       <android.support.design.widget.TabItem
         android:layout_width="wrap_content"
