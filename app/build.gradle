@@ -58,13 +58,14 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':cjdroid-dlLibrary')
     compile project(':cjdroid-viewpagerindicator')
+    compile project(':cjdroid-citypicker')
+
     compile files('libs/tencentX5WebView.jar')
     compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
     compile('com.alibaba.android:ultraviewpager:1.0.4@aar') {
         transitive = true
     }
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile project(':cjdroid-citypicker')
+
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:appcompat-v7:25.4.0'
     compile 'com.android.support:design:25.4.0'

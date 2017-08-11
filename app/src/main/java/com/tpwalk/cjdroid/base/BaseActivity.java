@@ -4,19 +4,19 @@ package com.tpwalk.cjdroid.base;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.activity.MainActivity;
-import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 /**
  * activity 基类
  * Created by Administrator on 2017/6/23.
  */
 
-public class BaseActivity extends RxAppCompatActivity {
+public class BaseActivity extends AppCompatActivity {
 
   protected Activity mActivity;
   private Toolbar mToolbar;

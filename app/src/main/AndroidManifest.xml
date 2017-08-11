@@ -135,7 +135,9 @@
     <activity android:name=".activity.login.RegisterActivity" />
     <activity android:name=".activity.login.ForgotPasswordActivity" />
     <activity android:name=".activity.mine.tools.citys.CityChooseActivity" />
-    <activity android:name=".activity.mine.MyToolsActivity"></activity>
+    <activity android:name=".activity.mine.MyToolsActivity" />
+    <activity android:name=".activity.mine.tools.tab.TabActivity" />
+    <activity android:name=".activity.mine.tools.dialogs.MyDialogActivity"></activity>
   </application>
 
 </manifest>

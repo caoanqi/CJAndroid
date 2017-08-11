@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.tpwalk.cjdroid.activity.mine.MyToolsActivity;
 import com.tpwalk.cjdroid.activity.mine.setting.SettingActivity;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentNotificationBinding;
@@ -45,6 +46,9 @@ public class MineFragment extends BaseFragment {
 
     fragmentNotificationBinding.rlSetting.setOnClickListener(
         v -> startActivity(new Intent().setClass(getActivity(), SettingActivity.class)));
+
+    fragmentNotificationBinding.rlMyTool.setOnClickListener(
+        v -> startActivity(new Intent().setClass(getActivity(), MyToolsActivity.class)));
 
 
   }

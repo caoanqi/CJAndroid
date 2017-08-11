@@ -7,7 +7,9 @@ import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.activity.mine.tools.anim.AnimaitonActivity;
 import com.tpwalk.cjdroid.activity.mine.tools.citys.CityChooseActivity;
 import com.tpwalk.cjdroid.activity.mine.tools.citys.LocationActivity;
+import com.tpwalk.cjdroid.activity.mine.tools.dialogs.MyDialogActivity;
 import com.tpwalk.cjdroid.activity.mine.tools.share.MyShareActivity;
+import com.tpwalk.cjdroid.activity.mine.tools.tab.TabActivity;
 import com.tpwalk.cjdroid.activity.mine.tools.webs.QQWebViewActivity;
 import com.tpwalk.cjdroid.activity.news.CommentsActivity;
 import com.tpwalk.cjdroid.base.BaseActivity;
@@ -51,5 +53,10 @@ public class MyToolsActivity extends BaseActivity {
         v -> startActivity(new Intent().setClass(this, QQWebViewActivity.class)));
     activityMyToolsBinding.bdMapView.setOnClickListener(
         v -> startActivity(new Intent().setClass(this, LocationActivity.class)));
+
+    activityMyToolsBinding.btnDialog.setOnClickListener(
+        v -> startActivity(new Intent().setClass(this, MyDialogActivity.class)));
+    activityMyToolsBinding.btnTab.setOnClickListener(
+        v -> startActivity(new Intent().setClass(this, TabActivity.class)));
   }
 }
