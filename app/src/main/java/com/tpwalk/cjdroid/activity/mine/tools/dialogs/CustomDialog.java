@@ -23,9 +23,7 @@ public class CustomDialog extends Dialog {
 
   private OnDialogListener mOnDialogListener;
 
-  Button btnRegisterLogin;
-  Button btnDialogCancel;
-  Context context;
+  private Context context;
 
   public CustomDialog(@NonNull Context context) {
     super(context);
@@ -63,13 +61,13 @@ public class CustomDialog extends Dialog {
     Button btnRegisterIdCardLogin = (Button) findViewById(R.id.btn_register_id_card_login);
     Button btnRegisterProvidentFundLogin = (Button) findViewById(
         R.id.btn_register_provident_fund_login);
-    btnRegisterLogin = (Button) findViewById(R.id.btn_register_login);
-    btnDialogCancel = (Button) findViewById(R.id.btn_dialog_cancel);
+    Button btnRegisterLogin = (Button) findViewById(R.id.btn_register_login);
+    Button btnDialogCancel = (Button) findViewById(R.id.btn_dialog_cancel);
 
     btnUnRegisterLogin.setOnClickListener(v -> mOnDialogListener.onUnRegisterLogin());
     btnRegisterIdCardLogin.setOnClickListener(v -> mOnDialogListener.onRegisterAndIdCardLogin());
-    btnRegisterProvidentFundLogin.setOnClickListener(
-        v -> mOnDialogListener.onRegisterAndProvidentFundLogin());
+    btnRegisterProvidentFundLogin
+        .setOnClickListener(v -> mOnDialogListener.onRegisterAndProvidentFundLogin());
     btnRegisterLogin.setOnClickListener(v -> mOnDialogListener.onRegisterLogin());
     btnDialogCancel.setOnClickListener(v -> mOnDialogListener.onCancel(this));
 
