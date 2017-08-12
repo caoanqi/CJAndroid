@@ -45,7 +45,6 @@ public class MyDialogActivity extends BaseActivity {
 
   private void showCustomDialog() {
     new CustomDialog(MyDialogActivity.this,
-        R.layout.dialog_custom,
         new OnDialogListener() {
           @Override
           public void onUnRegisterLogin() {
