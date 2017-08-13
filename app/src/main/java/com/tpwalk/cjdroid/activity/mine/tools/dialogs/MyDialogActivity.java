@@ -1,8 +1,10 @@
 package com.tpwalk.cjdroid.activity.mine.tools.dialogs;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import com.tpwalk.cjdroid.R;
 import com.tpwalk.cjdroid.activity.mine.tools.dialogs.CustomDialog.OnDialogListener;
 import com.tpwalk.cjdroid.base.BaseActivity;
@@ -31,7 +33,7 @@ public class MyDialogActivity extends BaseActivity {
   protected void initListener() {
     super.initListener();
 
-    mActivityMyDialogBinding.btnHalfTranceDialog.setOnClickListener(v -> showCustomDialog());
+    mActivityMyDialogBinding.btnHalfTranceDialog.setOnClickListener(v -> dialog4());
   }
 
   private void showLoginDialog() {
@@ -75,6 +77,24 @@ public class MyDialogActivity extends BaseActivity {
         })
         .show();
 
+  }
+
+  /**
+   * 列表对话框
+   */
+  private void dialog4() {
+    String items[] = {"item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8"};
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setTitle("列表对话框").setItems(items, new DialogInterface.OnClickListener() {
+      @Override
+      public void onClick(DialogInterface dialog, int which) {
+        //TODO 实现自己的需求
+      }
+    }).show();
+
+//    AlertDialog alertDialog=builder.create();
+//    alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//    alertDialog.show();
   }
 
 }
