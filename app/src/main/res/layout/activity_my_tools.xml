@@ -92,5 +92,10 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="Dialog" />
+    <Button
+      android:id="@+id/bt_timer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="计时器" />
   </LinearLayout>
 </layout>

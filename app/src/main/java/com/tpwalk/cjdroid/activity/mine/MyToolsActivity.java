@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import com.tpwalk.cjdroid.R;
+import com.tpwalk.cjdroid.activity.mine.tools.TimerButtonActivity;
 import com.tpwalk.cjdroid.activity.mine.tools.anim.AnimaitonActivity;
 import com.tpwalk.cjdroid.activity.mine.tools.citys.CityChooseActivity;
 import com.tpwalk.cjdroid.activity.mine.tools.citys.LocationActivity;
@@ -58,5 +59,7 @@ public class MyToolsActivity extends BaseActivity {
         v -> startActivity(new Intent().setClass(this, MyDialogActivity.class)));
     activityMyToolsBinding.btnTab.setOnClickListener(
         v -> startActivity(new Intent().setClass(this, TabActivity.class)));
+    activityMyToolsBinding.btTimer.setOnClickListener(
+        v -> startActivity(new Intent().setClass(this, TimerButtonActivity.class)));
   }
 }

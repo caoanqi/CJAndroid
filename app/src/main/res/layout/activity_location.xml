@@ -14,8 +14,18 @@
     <com.baidu.mapapi.map.MapView
       android:id="@+id/bmap_view"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="280dp"
       android:clickable="true" />
+
+
+    <TextView
+      android:id="@+id/tv_device_id"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/padding_16"
+      android:maxLines="10"
+      android:textSize="16sp" />
+
 
   </LinearLayout>
 
