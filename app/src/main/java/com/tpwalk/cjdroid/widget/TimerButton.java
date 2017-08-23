@@ -8,6 +8,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
+import com.tpwalk.cjdroid.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -94,6 +95,7 @@ public class TimerButton extends AppCompatButton implements View.OnClickListener
     initTimer();
     this.setText(countDownLength / 1000 + afterText);
     this.setEnabled(false);
+    TimerButton.this.setBackground(getResources().getDrawable(R.drawable.button_default_corner_grey_style));
     timer.schedule(timerTask, 0, 1000);
   }
 
@@ -147,6 +149,7 @@ public class TimerButton extends AppCompatButton implements View.OnClickListener
       countDownLength -= 1000;
       if (countDownLength < 0) {
         TimerButton.this.setEnabled(true);
+        TimerButton.this.setBackground(getResources().getDrawable(R.drawable.button_default_corner_style));
         TimerButton.this.setText(refreshText);
         clearTimer();
         countDownLength = 60 * 1000;
