@@ -1,4 +1,4 @@
-include ':app',
+include ':app', ':cjdroid-video', ':cjdroid-widget',
         ':cjdroid-myLibrary',
         ':cjdroid-dlLibrary',
         ':cjdroid-thirdLibrary',

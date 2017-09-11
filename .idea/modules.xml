@@ -10,7 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/cjdroid-network/cjdroid-network.iml" filepath="$PROJECT_DIR$/cjdroid-network/cjdroid-network.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-thirdLibrary/cjdroid-thirdLibrary.iml" filepath="$PROJECT_DIR$/cjdroid-thirdLibrary/cjdroid-thirdLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-utils/cjdroid-utils.iml" filepath="$PROJECT_DIR$/cjdroid-utils/cjdroid-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cjdroid-video/cjdroid-video.iml" filepath="$PROJECT_DIR$/cjdroid-video/cjdroid-video.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjdroid-viewpagerindicator/cjdroid-viewpagerindicator.iml" filepath="$PROJECT_DIR$/cjdroid-viewpagerindicator/cjdroid-viewpagerindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cjdroid-widget/cjdroid-widget.iml" filepath="$PROJECT_DIR$/cjdroid-widget/cjdroid-widget.iml" />
     </modules>
   </component>
 </project>

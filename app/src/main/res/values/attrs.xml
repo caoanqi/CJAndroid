@@ -5,4 +5,10 @@
         <attr name="rainbowbar_vspace" format="dimension" />
         <attr name="rainbowbar_color" format="color" />
     </declare-styleable>
+
+    <attr name="entrySummaries" format="reference" />
+
+    <declare-styleable name="IjkListPreference">
+        <attr name="entrySummaries" />
+    </declare-styleable>
 </resources>

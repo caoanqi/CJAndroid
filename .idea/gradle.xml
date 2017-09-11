@@ -15,7 +15,9 @@
             <option value="$PROJECT_DIR$/cjdroid-network" />
             <option value="$PROJECT_DIR$/cjdroid-thirdLibrary" />
             <option value="$PROJECT_DIR$/cjdroid-utils" />
+            <option value="$PROJECT_DIR$/cjdroid-video" />
             <option value="$PROJECT_DIR$/cjdroid-viewpagerindicator" />
+            <option value="$PROJECT_DIR$/cjdroid-widget" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
