@@ -20,10 +20,10 @@ public class ProgressBarView extends View {
 
   private Context mContext;
   int barColor = Color.parseColor("#1e88e5");
-  int hSpace = DensityUtils.dip2px(getResources(), 80);
-  int vSpace = DensityUtils.dip2px(getResources(), 4);
+  int hSpace = DensityUtils.dip2px(mContext, 80);
+  int vSpace = DensityUtils.dip2px(mContext, 4);
 
-  int space = DensityUtils.dip2px(getResources(), 10);
+  int space = DensityUtils.dip2px(mContext, 10);
   float startX = 0;
   float delta = 10f;
   Paint mPaint;
