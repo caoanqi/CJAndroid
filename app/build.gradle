@@ -21,7 +21,7 @@ android {
         config {
             keyAlias 'cjd'
             keyPassword '123456'
-            storeFile file('F:/MyCase/CjDroid/CJAndroid/app/signs/cjdroid.jks')
+            storeFile file('cjdroid.jks')
             storePassword 'cj1234'
         }
     }
@@ -50,6 +50,9 @@ android {
     compileOptions {
         targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions{
+        abortOnError false
     }
 
     sourceSets {
