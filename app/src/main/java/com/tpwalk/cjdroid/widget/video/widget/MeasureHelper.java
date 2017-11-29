@@ -22,7 +22,6 @@ import android.support.annotation.NonNull;
 import android.view.View;
 
 import com.tpwalk.cjdroid.R;
-import com.tpwalk.cjdroid.widget.video.widget.IRenderView;
 
 import java.lang.ref.WeakReference;
 

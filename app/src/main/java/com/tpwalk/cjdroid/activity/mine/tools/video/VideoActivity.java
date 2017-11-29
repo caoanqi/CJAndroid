@@ -5,20 +5,12 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.DynamicDrawableSpan;
-import android.text.style.ImageSpan;
-import android.util.Log;
 
 import com.tpwalk.cjdroid.R;
-import com.tpwalk.cjdroid.activity.mine.tools.video.content.RecentMediaStorage;
 import com.tpwalk.cjdroid.base.BaseActivity;
 import com.tpwalk.cjdroid.databinding.ActivityVideoBinding;
 import com.tpwalk.cjdroid.widget.video.Settings;
-import com.tpwalk.cjdroid.widget.video.widget.IjkVideoView;
 
-import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
 
 

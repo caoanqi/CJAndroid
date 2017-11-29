@@ -1,13 +1,11 @@
 package com.tpwalk.cjdroid.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.tpwalk.cjdroid.activity.mine.tools.citys.LocationActivity;
-import com.tpwalk.cjdroid.activity.mine.tools.webs.QQWebViewActivity;
+
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentDashboardBinding;
 

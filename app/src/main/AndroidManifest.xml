@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.tpwalk.cjdroid">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tpwalk.cjdroid">
 
     <!-- 基本 -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- 申请腾讯X5所需权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <!-- 地图 -->
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.GET_TASKS"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    <uses-permission android:name="android.permission.READ_LOGS"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:name=".CjDroidApplication"
@@ -36,117 +36,136 @@
             android:enabled="true"
             android:process=":remote">
             <intent-filter>
-                <action android:name="com.baidu.location.service_v2.2"/>
+                <action android:name="com.baidu.location.service_v2.2" />
             </intent-filter>
         </service>
-
         <!-- 百度地图Apikey -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="RzsGj2MquvHfcBFG50WoGPBaMz2EZ118"/>
+            android:value="RzsGj2MquvHfcBFG50WoGPBaMz2EZ118" />
 
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.tpwalk.cjdroid.activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".activity.mine.tools.citys.LocationActivity"/>
-        <activity android:name=".activity.news.CommentsActivity"/>
-        <activity android:name=".activity.mine.setting.SettingActivity"/>
-        <activity android:name=".activity.mine.tools.anim.AnimaitonActivity"/>
+            android:name="com.tpwalk.cjdroid.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.tpwalk.cjdroid.activity.mine.tools.citys.LocationActivity" />
+        <activity android:name="com.tpwalk.cjdroid.activity.news.CommentsActivity" />
+        <activity android:name="com.tpwalk.cjdroid.activity.mine.setting.SettingActivity" />
+        <activity android:name="com.tpwalk.cjdroid.activity.mine.tools.anim.AnimaitonActivity" />
         <activity
-            android:name=".citypicker.CityPickerActivity"
+            android:name="com.tpwalk.cjdroid.citypicker.CityPickerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/CityPicker.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".citypicker.CityPickerWithoutHotActivity"
+            android:name="com.tpwalk.cjdroid.citypicker.CityPickerWithoutHotActivity"
             android:screenOrientation="portrait"
             android:theme="@style/CityPicker.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <!-- 分享 -->
         <activity
-            android:name=".activity.mine.tools.share.MyShareActivity"
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.share.MyShareActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.speech.action.VOICE_SEARCH_RESULTS"/>
+                <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
-                <data android:scheme="about"/>
-                <data android:scheme="javascript"/>
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
-                <data android:scheme="inline"/>
-                <data android:mimeType="text/html"/>
-                <data android:mimeType="text/plain"/>
-                <data android:mimeType="application/xhtml+xml"/>
-                <data android:mimeType="application/vnd.wap.xhtml+xml"/>
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="inline" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
             </intent-filter>
             <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <action android:name="android.intent.action.WEB_SEARCH" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
+                <data android:scheme="http" />
+                <data android:scheme="https" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.MEDIA_SEARCH"/>
+                <action android:name="android.intent.action.MEDIA_SEARCH" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.SEARCH" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.mine.tools.share.UMengShareActivity"/>
-        <activity android:name=".activity.mine.tools.webs.QQWebViewActivity"/>
-        <activity android:name=".activity.login.LoginActivity"/>
-        <activity android:name=".activity.login.RegisterActivity"/>
-        <activity android:name=".activity.login.ForgotPasswordActivity"/>
-        <activity android:name=".activity.mine.tools.citys.CityChooseActivity"/>
-        <activity android:name=".activity.mine.MyToolsActivity"/>
-        <activity android:name=".activity.mine.tools.tab.TabActivity"/>
-        <activity android:name=".activity.mine.tools.dialogs.MyDialogActivity"/>
-        <activity android:name=".activity.mine.tools.TimerButtonActivity"/>
         <activity
-            android:name=".activity.mine.tools.video.VideoActivity"
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.share.UMengShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.webs.QQWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.login.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.citys.CityChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.MyToolsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.tab.TabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.dialogs.MyDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.TimerButtonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.video.VideoActivity"
             android:label="@string/title_activity_video"
-            android:theme="@style/AppTheme">
-        </activity>
-        <activity android:name=".activity.mine.tools.mdtool.CoordinatorLayoutActivity">
-        </activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.tpwalk.cjdroid.activity.mine.tools.mdtool.CoordinatorLayoutActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

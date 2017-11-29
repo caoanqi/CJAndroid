@@ -1,7 +1,6 @@
 package com.tpwalk.cjdroid.activity.mine.tools.mdtool;
 
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.tpwalk.cjdroid.R;

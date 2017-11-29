@@ -1,6 +1,5 @@
 package com.tpwalk.cjdroid.fragment;
 
-import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,8 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.tpwalk.cjdroid.R;
-import com.tpwalk.cjdroid.activity.news.CommentsActivity;
-import com.tpwalk.cjdroid.activity.mine.tools.anim.AnimaitonActivity;
 import com.tpwalk.cjdroid.adapters.PagerIndicatorAdaptor;
 import com.tpwalk.cjdroid.base.BaseFragment;
 import com.tpwalk.cjdroid.databinding.FragmentHomeBinding;

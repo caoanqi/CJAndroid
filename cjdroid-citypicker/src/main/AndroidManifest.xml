@@ -29,7 +29,7 @@
       </intent-filter>
     </service>
 
-    <activity android:name=".BaiduMapActivity"></activity>
+    <activity android:name="com.tpwalk.cjdroid.network.citypicker.BaiduMapActivity"></activity>
   </application>
 
 </manifest>
