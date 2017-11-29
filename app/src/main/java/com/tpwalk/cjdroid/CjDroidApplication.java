@@ -6,7 +6,7 @@ import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 import com.baidu.mapapi.SDKInitializer;
 import com.tencent.smtt.sdk.QbSdk;
-import com.tpwalk.cjdroid.service.LocationService;
+import com.tpwalk.cjdroid.common.service.LocationService;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 

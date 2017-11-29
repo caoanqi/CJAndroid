@@ -8,7 +8,7 @@
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.tpwalk.cjdroid.activity.mine.tools.video.VideoActivity">
+        tools:context=".view.activity.mine.tools.video.VideoActivity">
 
         <include layout="@layout/layout_toolbar"/>
 
@@ -26,7 +26,7 @@
                 android:gravity="center_vertical"
                 android:text="合理咯花费年"/>
 
-            <com.tpwalk.cjdroid.widget.video.widget.IjkVideoView
+            <com.tpwalk.cjdroid.common.widget.video.widget.IjkVideoView
                 android:id="@+id/ijk_video_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

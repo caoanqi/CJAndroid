@@ -45,7 +45,7 @@
             android:value="RzsGj2MquvHfcBFG50WoGPBaMz2EZ118" />
 
         <activity
-            android:name="com.tpwalk.cjdroid.activity.SplashActivity"
+            android:name=".view.activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -55,12 +55,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tpwalk.cjdroid.activity.MainActivity"
+            android:name=".view.activity.MainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.tpwalk.cjdroid.activity.mine.tools.citys.LocationActivity" />
-        <activity android:name="com.tpwalk.cjdroid.activity.news.CommentsActivity" />
-        <activity android:name="com.tpwalk.cjdroid.activity.mine.setting.SettingActivity" />
-        <activity android:name="com.tpwalk.cjdroid.activity.mine.tools.anim.AnimaitonActivity" />
+        <activity android:name=".view.activity.mine.tools.citys.LocationActivity" />
+        <activity android:name=".view.activity.news.CommentsActivity" />
+        <activity android:name=".view.activity.mine.setting.SettingActivity" />
+        <activity android:name=".view.activity.mine.tools.anim.AnimaitonActivity" />
         <activity
             android:name="com.tpwalk.cjdroid.citypicker.CityPickerActivity"
             android:screenOrientation="portrait"
@@ -73,7 +73,7 @@
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <!-- 分享 -->
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.share.MyShareActivity"
+            android:name=".view.activity.mine.tools.share.MyShareActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
@@ -130,41 +130,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.share.UMengShareActivity"
+            android:name=".view.activity.mine.tools.share.UMengShareActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.webs.QQWebViewActivity"
+            android:name=".view.activity.mine.tools.webs.QQWebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.login.LoginActivity"
+            android:name=".view.activity.login.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.login.RegisterActivity"
+            android:name=".view.activity.login.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.login.ForgotPasswordActivity"
+            android:name=".view.activity.login.ForgotPasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.citys.CityChooseActivity"
+            android:name=".view.activity.mine.tools.citys.CityChooseActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.MyToolsActivity"
+            android:name=".view.activity.mine.MyToolsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.tab.TabActivity"
+            android:name=".view.activity.mine.tools.tab.TabActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.dialogs.MyDialogActivity"
+            android:name=".view.activity.mine.tools.dialogs.MyDialogActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.TimerButtonActivity"
+            android:name=".view.activity.mine.tools.TimerButtonActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.video.VideoActivity"
+            android:name=".view.activity.mine.tools.video.VideoActivity"
             android:label="@string/title_activity_video"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.tpwalk.cjdroid.activity.mine.tools.mdtool.CoordinatorLayoutActivity"
+            android:name=".view.activity.mine.tools.mdtool.CoordinatorLayoutActivity"
             android:screenOrientation="portrait" />
     </application>
 

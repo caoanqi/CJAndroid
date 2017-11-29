@@ -5,9 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
-import com.tpwalk.cjdroid.fragment.VideoFragment;
-import com.tpwalk.cjdroid.fragment.NewsFragment;
-import com.tpwalk.cjdroid.fragment.MineFragment;
+import com.tpwalk.cjdroid.view.fragment.VideoFragment;
+import com.tpwalk.cjdroid.view.fragment.NewsFragment;
+import com.tpwalk.cjdroid.view.fragment.MineFragment;
 
 import java.util.ArrayList;
 import java.util.List;

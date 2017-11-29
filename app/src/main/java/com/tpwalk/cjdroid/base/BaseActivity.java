@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.tpwalk.cjdroid.R;
-import com.tpwalk.cjdroid.activity.MainActivity;
+import com.tpwalk.cjdroid.view.activity.MainActivity;
 
 /**
  * activity 基类

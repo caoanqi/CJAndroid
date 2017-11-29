@@ -7,7 +7,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.tpwalk.cjdroid.activity.mine.tools.TimerButtonActivity">
+        tools:context=".view.activity.mine.tools.TimerButtonActivity">
 
         <include
             android:id="@+id/include5"
@@ -22,7 +22,7 @@
             tools:layout_constraintRight_creator="1"
             tools:layout_constraintTop_creator="1"/>
 
-        <com.tpwalk.cjdroid.widget.TimerButton
+        <com.tpwalk.cjdroid.common.widget.TimerButton
             android:id="@+id/button5"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             tools:layout_constraintRight_creator="1"/>
 
 
-        <com.tpwalk.cjdroid.widget.expand.TouchExpandLayout
+        <com.tpwalk.cjdroid.common.widget.expand.TouchExpandLayout
             android:layout_width="0dp"
             android:layout_height="17dp"
             android:layout_marginEnd="8dp"
@@ -64,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="发送到放假哦对司法jo岁的金发i哦of送到附近的宋房价松动if"/>
-        </com.tpwalk.cjdroid.widget.expand.TouchExpandLayout>
+        </com.tpwalk.cjdroid.common.widget.expand.TouchExpandLayout>
 
     </android.support.constraint.ConstraintLayout>
 

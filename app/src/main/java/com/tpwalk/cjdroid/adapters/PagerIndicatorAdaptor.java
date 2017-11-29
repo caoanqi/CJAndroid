@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.tpwalk.cjdroid.fragment.NewsScrollPagerFragment;
+import com.tpwalk.cjdroid.view.fragment.NewsScrollPagerFragment;
 
 /**
  * Created by caoyoulin on 2017/7/12.

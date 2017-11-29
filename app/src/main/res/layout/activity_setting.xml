@@ -12,7 +12,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.mine.setting.SettingActivity">
+    tools:context=".view.activity.mine.setting.SettingActivity">
     <include layout="@layout/layout_toolbar" />
 
     <RelativeLayout

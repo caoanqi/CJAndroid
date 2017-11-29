@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.mine.tools.citys.CityChooseActivity">
+    tools:context=".view.activity.mine.tools.citys.CityChooseActivity">
 
     <include layout="@layout/layout_toolbar" />
 
