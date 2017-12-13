@@ -5,7 +5,7 @@
   <data>
     <variable
       name="viewModel"
-      type="com.tpwalk.cjdroid.activity.mine.tools.dialogs.MyDialogViewModel" />
+      type="com.tpwalk.cjdroid.view.activity.mine.tools.dialogs.MyDialogViewModel" />
   </data>
   <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"

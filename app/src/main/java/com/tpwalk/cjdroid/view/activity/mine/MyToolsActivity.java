@@ -12,11 +12,11 @@ import com.tpwalk.cjdroid.view.activity.mine.tools.citys.LocationActivity;
 import com.tpwalk.cjdroid.view.activity.mine.tools.dialogs.MyDialogActivity;
 import com.tpwalk.cjdroid.view.activity.mine.tools.share.MyShareActivity;
 import com.tpwalk.cjdroid.view.activity.mine.tools.tab.TabActivity;
-import com.tpwalk.cjdroid.view.activity.mine.tools.video.VideoActivity;
 import com.tpwalk.cjdroid.view.activity.mine.tools.webs.QQWebViewActivity;
 import com.tpwalk.cjdroid.view.activity.news.CommentsActivity;
 import com.tpwalk.cjdroid.base.BaseActivity;
 import com.tpwalk.cjdroid.databinding.ActivityMyToolsBinding;
+import com.tpwalk.cjdroid.view.activity.video.VideoViewActivity;
 
 public class MyToolsActivity extends BaseActivity {
 
@@ -64,6 +64,7 @@ public class MyToolsActivity extends BaseActivity {
         activityMyToolsBinding.btTimer.setOnClickListener(
                 v -> startActivity(new Intent().setClass(this, TimerButtonActivity.class)));
 
-        activityMyToolsBinding.btVideo.setOnClickListener(v -> startActivity(new Intent().setClass(this, VideoActivity.class)));
+        activityMyToolsBinding.btVideo.setOnClickListener(v ->
+                startActivity(new Intent().setClass(this, VideoViewActivity.class)));
     }
 }

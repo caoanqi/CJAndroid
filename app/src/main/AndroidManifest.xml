@@ -62,12 +62,12 @@
         <activity android:name=".view.activity.mine.setting.SettingActivity" />
         <activity android:name=".view.activity.mine.tools.anim.AnimaitonActivity" />
         <activity
-            android:name="com.tpwalk.cjdroid.citypicker.CityPickerActivity"
+            android:name=".citypicker.CityPickerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/CityPicker.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="com.tpwalk.cjdroid.citypicker.CityPickerWithoutHotActivity"
+            android:name=".citypicker.CityPickerWithoutHotActivity"
             android:screenOrientation="portrait"
             android:theme="@style/CityPicker.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustPan" />
@@ -166,6 +166,7 @@
         <activity
             android:name=".view.activity.mine.tools.mdtool.CoordinatorLayoutActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".view.activity.video.VideoViewActivity"></activity>
     </application>
 
 </manifest>
